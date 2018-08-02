@@ -297,6 +297,12 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
+# Dirac
+PRODUCT_COPY_FILES += \
+    vendor/yu/lettuce/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
+    vendor/yu/lettuce/proprietary/vendor/lib/libDiracAPI_SHARED.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDiracAPI_SHARED.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so
+
 PRODUCT_PACKAGES += \
     ims \
     imssettings \
