@@ -21,7 +21,9 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/yu/lettuce/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/yu/lettuce/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/yu/lettuce/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
     vendor/yu/lettuce/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/yu/lettuce/proprietary/lib64/librilqmiservices.so:system/lib64/librilqmiservices.so \
     vendor/yu/lettuce/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/yu/lettuce/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/yu/lettuce/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:system/vendor/bin/hw/android.hardware.drm@1.2-service.widevine \
@@ -32,11 +34,21 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
     vendor/yu/lettuce/proprietary/vendor/bin/move_widevine_data.sh:system/vendor/bin/move_widevine_data.sh \
     vendor/yu/lettuce/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
+    vendor/yu/lettuce/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/yu/lettuce/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
     vendor/yu/lettuce/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/yu/lettuce/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/yu/lettuce/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/yu/lettuce/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
+    vendor/yu/lettuce/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
+    vendor/yu/lettuce/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/yu/lettuce/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
+    vendor/yu/lettuce/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/imscm.xml:system/vendor/etc/permissions/imscm.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qcnvitems.xml:system/vendor/etc/permissions/qcnvitems.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/telephonyservice.xml:system/vendor/etc/permissions/telephonyservice.xml \
     vendor/yu/lettuce/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
     vendor/yu/lettuce/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
     vendor/yu/lettuce/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:system/vendor/firmware/cpp_firmware_v1_4_0.fw \
@@ -47,14 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/firmware/venus.b04:system/vendor/firmware/venus.b04 \
     vendor/yu/lettuce/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
     vendor/yu/lettuce/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
-    vendor/yu/lettuce/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc \
-    vendor/yu/lettuce/proprietary/vendor/etc/permissions/imscm.xml:system/vendor/etc/permissions/imscm.xml \
-    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qcnvitems.xml:system/vendor/etc/permissions/qcnvitems.xml \
-    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
-    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
-    vendor/yu/lettuce/proprietary/vendor/lib64/libwcnss_qmi.so:system/vendor/lib64/libwcnss_qmi.so \
-    vendor/yu/lettuce/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/yu/lettuce/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/yu/lettuce/proprietary/vendor/framework/QtiTelephonyServicelibrary.jar:system/vendor/framework/QtiTelephonyServicelibrary.jar \
     vendor/yu/lettuce/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/yu/lettuce/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/yu/lettuce/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -83,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -130,6 +136,10 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_sunny_snapshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_sunny_snapshot.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_sunny_video_hd.so:system/vendor/lib/libchromatix_ov8865_q8v18a_sunny_video_hd.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_sunny_zsl.so:system/vendor/lib/libchromatix_ov8865_q8v18a_sunny_zsl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libdatactrl.so:system/vendor/lib/libdatactrl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
@@ -140,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -169,7 +180,9 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/yu/lettuce/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -183,12 +196,21 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/yu/lettuce/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/yu/lettuce/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/yu/lettuce/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/yu/lettuce/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/yu/lettuce/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
@@ -208,15 +230,35 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:system/vendor/lib64/egl/libRBGLESv2_adreno.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libCommandSvc.so:system/vendor/lib64/libCommandSvc.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libSubSystemShutdown.so:system/vendor/lib64/libSubSystemShutdown.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
@@ -232,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libdatactrl.so:system/vendor/lib64/libdatactrl.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
@@ -242,6 +285,8 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
@@ -267,6 +312,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
@@ -278,34 +324,18 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libsubsystem_control.so:system/vendor/lib64/libsubsystem_control.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
+    vendor/yu/lettuce/proprietary/vendor/lib64/libwcnss_qmi.so:system/vendor/lib64/libwcnss_qmi.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libwvhidl.so:system/vendor/lib64/libwvhidl.so \
-    vendor/yu/lettuce/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
+    vendor/yu/lettuce/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/yu/lettuce/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 # Dirac
 PRODUCT_COPY_FILES += \
@@ -321,6 +351,7 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
     qcrilmsgtunnel \
+    QtiTelephonyService \
     TimeService \
     shutdownlistener \
     qcnvitems \
