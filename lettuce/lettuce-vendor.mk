@@ -182,7 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/yu/lettuce/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    vendor/yu/lettuce/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/yu/lettuce/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
