@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/yu/lettuce/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/yu/lettuce/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
-    vendor/yu/lettuce/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/yu/lettuce/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/yu/lettuce/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc \
     vendor/yu/lettuce/proprietary/vendor/etc/permissions/imscm.xml:system/vendor/etc/permissions/imscm.xml \
